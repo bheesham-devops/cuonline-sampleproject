@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
     <h1>New user Register for training - Devops TechLab</h1>
-    <p>Please fill in this form to create an account. Pipeline JOB Testing</p>
+    <p>Please fill in this form to create an account. Pipeline JOB Testing with Auto Deployment</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
