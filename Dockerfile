@@ -1,14 +1,14 @@
-FROM maven:3.8.4-openjdk-17 AS builder
+FROM maven:3.9.11-openjdk-21 AS builder
 
 WORKDIR /app
 
 COPY . .
 
-RUN mvn package
+RUN mvn clean package
 
 # Tomcat image for deployment
 
-FROM tomcat:9.0.56-jdk17-openjdk-slim
+FROM tomcat:9.0.108-jdk21-openjdk-slim
 
 WORKDIR /usr/local/tomcat/webapps
 
