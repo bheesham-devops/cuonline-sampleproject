@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
     <h1>New user Register for training - Devops TechLab</h1>
-    <p>Deploy using Docker</p>
+    <p>Deploy using Docker with Bheesham</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
