@@ -1,4 +1,4 @@
-FROM maven:3.9.11-openjdk-21 AS builder
+FROM maven:3.9.9-eclipse-temurin-21 AS builder
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN mvn clean package
 
 # Tomcat image for deployment
 
-FROM tomcat:9.0.108-jdk21-openjdk-slim
+FROM tomcat:9.0.108-jdk21-temurin
 
 WORKDIR /usr/local/tomcat/webapps
 
