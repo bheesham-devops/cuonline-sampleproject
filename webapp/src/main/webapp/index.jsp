@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user Register for training - Devops TechLab</h1>
+    <h1>New user Register for training - Devops TechLab Jenkins Training</h1>
     <p>Deploy using Docker with Bheesham</p>
     <hr>
      
