@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user Register for training - DevOps Techlab Build Pipeline and Deploy using Pipeline.</h1>
-    <p>Deploy on Tomact using Deploy Job automatically</p>
+    <h1>New user Register for training - DevOps Techlab Docker Image.</h1>
+    <p>Deploy using Docker Image</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
