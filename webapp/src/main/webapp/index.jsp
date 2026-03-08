@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
     <h1>New user Register for training - DevOps Techlab</h1>
-    <p>Testing Automated Deployment on TOMCAT</p>
+    <p>Testing Automated Build and Deployment using Jenkins</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
