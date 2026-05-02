@@ -12,10 +12,12 @@ FROM tomcat:9.0.108-jdk21-temurin
 
 WORKDIR /usr/local/tomcat/webapps
 
-# Copy the built WAR file from the Maven builder stage to the Tomcat webapps directory
-COPY --from=builder /app/webapp/target/*.war .
+# Remove default ROOT app and deploy as ROOT.war so the app is
+# accessible at / instead of /webapp
+RUN rm -rf ROOT
+
+COPY --from=builder /app/webapp/target/*.war ROOT.war
 
 EXPOSE 8080
 
-# Command to run Tomcat
 CMD ["catalina.sh", "run"]
