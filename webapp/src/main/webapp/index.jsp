@@ -213,6 +213,7 @@
     <a href="#milestones">Milestones</a>
     <a href="#pipeline">CI/CD</a>
     <a href="#stack">Stack</a>
+    <a href="/performance/" target="_blank">&#128202; Performance</a>
     <a href="#pipeline" class="nav-cta">ArgoCD</a>
   </div>
 </nav>
@@ -243,9 +244,9 @@
       <div class="prog"><div class="prog-row"><span class="prog-name">&#x1F4CA; Monitoring</span><span class="prog-pct c-amb">100%</span></div><div class="prog-bg"><div class="prog-fill f-amb"></div></div></div>
       <div class="sc-rule"></div>
       <div class="sc-counts">
-        <div class="scc"><div class="scc-v" style="color:#059669">8</div><div class="scc-l">Done</div></div>
+        <div class="scc"><div class="scc-v" style="color:#059669">9</div><div class="scc-l">Done</div></div>
         <div class="scc"><div class="scc-v" style="color:#7b0d0d">0</div><div class="scc-l">Active</div></div>
-        <div class="scc"><div class="scc-v" style="color:#d97706">2</div><div class="scc-l">Pending</div></div>
+        <div class="scc"><div class="scc-v" style="color:#d97706">1</div><div class="scc-l">Pending</div></div>
       </div>
     </div>
   </div>
@@ -284,19 +285,19 @@
     <p>Live snapshot of all 10 project milestones with individual progress indicators.</p>
   </div>
   <div class="overall-banner">
-    <div class="ob-left"><h3>Overall Project Completion</h3><p>8 of 10 complete &middot; 0 in progress &middot; 2 pending</p></div>
+    <div class="ob-left"><h3>Overall Project Completion</h3><p>9 of 10 complete &middot; 0 in progress &middot; 1 pending</p></div>
     <div class="ob-nums">
-      <div class="obn"><div class="obn-v">8</div><div class="obn-l">&#x2705; Done</div></div>
+      <div class="obn"><div class="obn-v">9</div><div class="obn-l">&#x2705; Done</div></div>
       <div class="obn"><div class="obn-v">0</div><div class="obn-l">&#x1F534; Active</div></div>
-      <div class="obn"><div class="obn-v">2</div><div class="obn-l">&#x23F3; Pending</div></div>
+      <div class="obn"><div class="obn-v">1</div><div class="obn-l">&#x23F3; Pending</div></div>
     </div>
     <div class="ob-ring">
-      <!-- circumference = 2*π*30 ≈ 188.5 | 80% done → dashoffset = 188.5 * 0.20 ≈ 38 -->
+      <!-- circumference = 2*π*30 ≈ 188.5 | 90% done → dashoffset = 188.5 * 0.10 ≈ 19 -->
       <svg width="78" height="78" viewBox="0 0 78 78">
         <circle cx="39" cy="39" r="30" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="7"/>
-        <circle cx="39" cy="39" r="30" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="188" stroke-dashoffset="38" stroke-linecap="round"/>
+        <circle cx="39" cy="39" r="30" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="188" stroke-dashoffset="19" stroke-linecap="round"/>
       </svg>
-      <div class="ob-ring-text"><div class="rp">80%</div><div class="rl">DONE</div></div>
+      <div class="ob-ring-text"><div class="rp">90%</div><div class="rl">DONE</div></div>
     </div>
   </div>
   <div class="ms-list">
@@ -308,7 +309,7 @@
     <div class="ms-row"><div class="ms-num n-done">06</div><div class="ms-body"><div class="ms-title">GitHub Actions CI Pipeline</div><div class="ms-sub">App pipeline: Maven build → Docker push → GitOps repo update. Terraform pipeline: fmt → validate → plan → manual-gated apply</div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
     <div class="ms-row"><div class="ms-num n-done">07</div><div class="ms-body"><div class="ms-title">System Monitoring Setup</div><div class="ms-sub">kube-prometheus-stack &mdash; Prometheus (20Gi PVC), Grafana, Alertmanager, GKE-tuned alert rules, live at grafana.nayaratech.online</div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
     <div class="ms-row"><div class="ms-num n-done">08</div><div class="ms-body"><div class="ms-title">Validate Automation Workflows</div><div class="ms-sub">Firing alerts diagnosed &amp; resolved, Terraform CI/CD pipeline verified end-to-end, infrastructure state confirmed drift-free</div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
-    <div class="ms-row"><div class="ms-num n-pending">09</div><div class="ms-body"><div class="ms-title">Conduct Performance Tests</div><div class="ms-sub">Load testing with k6 / JMeter &mdash; throughput, latency, HPA auto-scale verification under peak traffic</div></div><div class="ms-pw"><div class="ms-pct-lbl">0%</div><div class="ms-bg"><div class="ms-fill" style="width:0%"></div></div></div><span class="badge b-pending">Pending</span></div>
+    <div class="ms-row"><div class="ms-num n-done">09</div><div class="ms-body"><div class="ms-title">Conduct Performance Tests</div><div class="ms-sub">JMeter 5.6.3 load testing &mdash; Smoke (5u), Load (50u), Stress (100u) &mdash; 1,150 samples, APDEX 0.924, &lt;0.2% SLA breach &mdash; <a href="/performance/" target="_blank" style="color:#7b0d0d;font-weight:700">View Dashboard &#8594;</a></div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
     <div class="ms-row"><div class="ms-num n-pending">10</div><div class="ms-body"><div class="ms-title">Document Automation Scripts</div><div class="ms-sub">Architecture diagrams, Terraform module docs, runbooks, project report submission</div></div><div class="ms-pw"><div class="ms-pct-lbl">0%</div><div class="ms-bg"><div class="ms-fill" style="width:0%"></div></div></div><span class="badge b-pending">Pending</span></div>
   </div>
 
