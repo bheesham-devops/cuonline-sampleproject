@@ -228,12 +228,18 @@
       <p class="hero-desc">A production-grade DevOps automation system combining Docker containerisation, Kubernetes on GKE, Terraform infrastructure-as-code, ArgoCD-powered GitOps continuous delivery, and full-stack observability with Prometheus &amp; Grafana — all running live on Google Cloud.</p>
       <div class="hero-btns">
         <a href="#milestones" class="btn btn-red">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           View Milestones
         </a>
         <a href="https://argocd.nayaratech.online" target="_blank" class="btn btn-red">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          Live ArgoCD &#8599;
+          <!-- Sync arrows = ArgoCD GitOps continuous reconciliation -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          ArgoCD
+        </a>
+        <a href="https://grafana.nayaratech.online" target="_blank" class="btn btn-red">
+          <!-- Pulse line = Grafana observability & monitoring -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Grafana
         </a>
       </div>
     </div>
