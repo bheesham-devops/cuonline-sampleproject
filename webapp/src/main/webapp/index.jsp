@@ -5,6 +5,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GitOps-Based Cloud Application Deployment</title>
+  <link rel="icon" type="image/x-icon" href="https://www.cuchd.in/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,8 +17,8 @@
     /* Top Bar */
     .topbar { background: #7b0d0d; padding: 9px 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
     .topbar-left { display: flex; align-items: center; gap: 12px; }
-    .cu-logo-box { background: #fff; border-radius: 7px; padding: 4px 10px; display: flex; align-items: center; min-width: 44px; min-height: 44px; justify-content: center; }
-    .cu-logo-box img { height: 34px; width: auto; display: block; }
+    .cu-logo-box { background: #fff; border-radius: 7px; padding: 4px 10px; display: flex; align-items: center; min-height: 44px; justify-content: center; }
+    .cu-logo-box img { height: 34px; width: auto; max-width: 120px; display: block; object-fit: contain; }
     .cu-name { font-size: .9rem; font-weight: 700; color: #fff; }
     .cu-dept { font-size: .7rem; color: rgba(255,255,255,.75); margin-top: 1px; }
     .topbar-right { display: flex; align-items: center; gap: 8px; }
@@ -186,8 +187,8 @@
 <div class="topbar">
   <div class="topbar-left">
     <div class="cu-logo-box">
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Chandigarh_University_logo.png/200px-Chandigarh_University_logo.png"
-           alt="Chandigarh University"
+      <img src="OnlineCU-logo.svg"
+           alt="CU Online"
            onerror="this.parentElement.innerHTML='<b style=&quot;color:#7b0d0d;font-size:.9rem&quot;>CU</b>'"/>
     </div>
     <div>
@@ -196,8 +197,9 @@
     </div>
   </div>
   <div class="topbar-right">
-    <span class="t-pill">DevOps Engineering</span>
+    <span class="t-pill">MCA - Cloud Computing</span>
     <span class="t-pill">AY 2025&ndash;26</span>
+    <span class="t-pill" style="background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.35);">ID: O24MCA112027</span>
     <span class="live-dot">Live</span>
   </div>
 </div>
@@ -214,7 +216,7 @@
     <a href="#pipeline">CI/CD</a>
     <a href="#stack">Stack</a>
     <a href="/performance/" target="_blank">&#128202; Performance</a>
-    <a href="#pipeline" class="nav-cta">ArgoCD</a>
+    <a href="#pipeline">ArgoCD</a>
   </div>
 </nav>
 
@@ -230,7 +232,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           View Milestones
         </a>
-        <a href="#pipeline" class="btn btn-out">
+        <a href="#pipeline" class="btn btn-red" style="background:#5f0a0a;box-shadow:0 4px 14px rgba(95,10,10,.28);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
           ArgoCD Pipeline
         </a>
@@ -244,9 +246,9 @@
       <div class="prog"><div class="prog-row"><span class="prog-name">&#x1F4CA; Monitoring</span><span class="prog-pct c-amb">100%</span></div><div class="prog-bg"><div class="prog-fill f-amb"></div></div></div>
       <div class="sc-rule"></div>
       <div class="sc-counts">
-        <div class="scc"><div class="scc-v" style="color:#059669">9</div><div class="scc-l">Done</div></div>
+        <div class="scc"><div class="scc-v" style="color:#059669">10</div><div class="scc-l">Done</div></div>
         <div class="scc"><div class="scc-v" style="color:#7b0d0d">0</div><div class="scc-l">Active</div></div>
-        <div class="scc"><div class="scc-v" style="color:#d97706">1</div><div class="scc-l">Pending</div></div>
+        <div class="scc"><div class="scc-v" style="color:#d97706">0</div><div class="scc-l">Pending</div></div>
       </div>
     </div>
   </div>
@@ -285,19 +287,19 @@
     <p>Live snapshot of all 10 project milestones with individual progress indicators.</p>
   </div>
   <div class="overall-banner">
-    <div class="ob-left"><h3>Overall Project Completion</h3><p>9 of 10 complete &middot; 0 in progress &middot; 1 pending</p></div>
+    <div class="ob-left"><h3>Overall Project Completion</h3><p>10 of 10 complete &middot; 0 in progress &middot; 0 pending</p></div>
     <div class="ob-nums">
-      <div class="obn"><div class="obn-v">9</div><div class="obn-l">&#x2705; Done</div></div>
+      <div class="obn"><div class="obn-v">10</div><div class="obn-l">&#x2705; Done</div></div>
       <div class="obn"><div class="obn-v">0</div><div class="obn-l">&#x1F534; Active</div></div>
-      <div class="obn"><div class="obn-v">1</div><div class="obn-l">&#x23F3; Pending</div></div>
+      <div class="obn"><div class="obn-v">0</div><div class="obn-l">&#x23F3; Pending</div></div>
     </div>
     <div class="ob-ring">
-      <!-- circumference = 2*π*30 ≈ 188.5 | 90% done → dashoffset = 188.5 * 0.10 ≈ 19 -->
+      <!-- circumference = 2*π*30 ≈ 188.5 | 100% done → dashoffset = 0 -->
       <svg width="78" height="78" viewBox="0 0 78 78">
         <circle cx="39" cy="39" r="30" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="7"/>
-        <circle cx="39" cy="39" r="30" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="188" stroke-dashoffset="19" stroke-linecap="round"/>
+        <circle cx="39" cy="39" r="30" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="188" stroke-dashoffset="0" stroke-linecap="round"/>
       </svg>
-      <div class="ob-ring-text"><div class="rp">90%</div><div class="rl">DONE</div></div>
+      <div class="ob-ring-text"><div class="rp">100%</div><div class="rl">DONE</div></div>
     </div>
   </div>
   <div class="ms-list">
@@ -310,7 +312,7 @@
     <div class="ms-row"><div class="ms-num n-done">07</div><div class="ms-body"><div class="ms-title">System Monitoring Setup</div><div class="ms-sub">kube-prometheus-stack &mdash; Prometheus (20Gi PVC), Grafana, Alertmanager, GKE-tuned alert rules, live at grafana.nayaratech.online</div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
     <div class="ms-row"><div class="ms-num n-done">08</div><div class="ms-body"><div class="ms-title">Validate Automation Workflows</div><div class="ms-sub">Firing alerts diagnosed &amp; resolved, Terraform CI/CD pipeline verified end-to-end, infrastructure state confirmed drift-free</div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
     <div class="ms-row"><div class="ms-num n-done">09</div><div class="ms-body"><div class="ms-title">Conduct Performance Tests</div><div class="ms-sub">JMeter 5.6.3 load testing &mdash; Smoke (5u), Load (50u), Stress (100u) &mdash; 1,150 samples, APDEX 0.924, &lt;0.2% SLA breach &mdash; <a href="/performance/" target="_blank" style="color:#7b0d0d;font-weight:700">View Dashboard &#8594;</a></div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
-    <div class="ms-row"><div class="ms-num n-pending">10</div><div class="ms-body"><div class="ms-title">Document Automation Scripts</div><div class="ms-sub">Architecture diagrams, Terraform module docs, runbooks, project report submission</div></div><div class="ms-pw"><div class="ms-pct-lbl">0%</div><div class="ms-bg"><div class="ms-fill" style="width:0%"></div></div></div><span class="badge b-pending">Pending</span></div>
+    <div class="ms-row"><div class="ms-num n-done">10</div><div class="ms-body"><div class="ms-title">Document Automation Scripts</div><div class="ms-sub">Architecture diagrams, Terraform module docs, runbooks, project report submission</div></div><div class="ms-pw"><div class="ms-pct-lbl">100%</div><div class="ms-bg"><div class="ms-fill" style="width:100%;background:#059669"></div></div></div><span class="badge b-done">Complete</span></div>
   </div>
 
   <!-- ArgoCD Pipeline -->
@@ -375,13 +377,16 @@
 <footer class="footer">
   <div class="footer-in">
     <div class="footer-brand">
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Chandigarh_University_logo.png/200px-Chandigarh_University_logo.png" alt="CU" onerror="this.style.display='none'"/>
+      <img src="OnlineCU-logo.svg" alt="CU Online" onerror="this.style.display='none'"/>
       <div>
         <div class="fb-name">Chandigarh University &mdash; CU Online</div>
         <div class="fb-sub">GitOps-Based Cloud Application Deployment &nbsp;&middot;&nbsp; AY 2025&ndash;26</div>
       </div>
     </div>
-    <div class="footer-copy">&copy; 2026 Chandigarh University. All rights reserved.</div>
+    <div class="footer-copy">
+      &copy; 2026 Chandigarh University. All rights reserved.<br/>
+      <span style="font-size:.7rem;color:#64748b;">Submitted by <strong style="color:#1e293b;">Bheesham Kumar</strong> &mdash; MCA Student &nbsp;&middot;&nbsp; CUID: <strong style="color:#1e293b;">O24MCA112027</strong></span>
+    </div>
     <div class="footer-status">
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
       System Operational
