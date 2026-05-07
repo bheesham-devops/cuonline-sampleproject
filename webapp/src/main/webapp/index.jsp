@@ -216,7 +216,6 @@
     <a href="#pipeline">CI/CD</a>
     <a href="#stack">Stack</a>
     <a href="/performance/" target="_blank">&#128202; Performance</a>
-    <a href="#pipeline">ArgoCD</a>
   </div>
 </nav>
 
@@ -232,9 +231,9 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           View Milestones
         </a>
-        <a href="#pipeline" class="btn btn-red" style="background:#5f0a0a;box-shadow:0 4px 14px rgba(95,10,10,.28);">
+        <a href="https://argocd.nayaratech.online" target="_blank" class="btn btn-red">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          ArgoCD Pipeline
+          Live ArgoCD &#8599;
         </a>
       </div>
     </div>
